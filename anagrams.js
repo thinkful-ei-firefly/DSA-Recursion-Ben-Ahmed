@@ -5,7 +5,6 @@ function anagrams(str) {
   } else {
     for (let i = 0; i < str.length; i++) {
       const first = str[i];
-
       const remain = str.slice(0, i) + str.slice(i + 1);
       const permutations = anagrams(remain);
       permutations.forEach(p => {
